@@ -813,12 +813,12 @@
     }
   
     #btn-close { border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; background:url(assets/close-normal.png) center/100% 100% no-repeat !important; color:transparent; padding:0; backdrop-filter:none; -webkit-backdrop-filter:none; }
-    #btn-close:active { background-image:url(assets/close-hover.png) !important; }
-    @media (hover: hover) { #btn-close:hover { background:url(assets/close-hover.png) center/100% 100% no-repeat !important; border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; } }
+    #btn-close:active { background-image:url(assets/close-pressed.png) !important; }
+    @media (hover: hover) { #btn-close:hover { background:url(assets/close-pressed.png) center/100% 100% no-repeat !important; border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; } }
 
     #lb-close { border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; background:url(assets/close-normal.png) center/100% 100% no-repeat !important; color:transparent; padding:0; backdrop-filter:none; -webkit-backdrop-filter:none; }
-    #lb-close:active { background-image:url(assets/close-hover.png) !important; }
-    @media (hover: hover) { #lb-close:hover { background:url(assets/close-hover.png) center/100% 100% no-repeat !important; border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; } }
+    #lb-close:active { background-image:url(assets/close-pressed.png) !important; }
+    @media (hover: hover) { #lb-close:hover { background:url(assets/close-pressed.png) center/100% 100% no-repeat !important; border:none !important; border-radius:0 !important; width:45px !important; height:45px !important; } }
 
     /* ══════════════ DESIGN v2 — cinza escuro #151718 ══════════════ */
     :root {
@@ -898,11 +898,11 @@
     .lb-nav { border: none !important; border-radius:0 !important; width:45px !important; height:45px !important; padding: 0; color: transparent; background-repeat: no-repeat !important; background-position: center !important; background-size: 100% 100% !important; }
     #lb-prev { background-image: url(assets/voltar-normal.png) !important; }
     #lb-next { background-image: url(assets/proximo-normal.png) !important; }
-    #lb-prev:active { background-image: url(assets/voltar-hover.png) !important; }
-    #lb-next:active { background-image: url(assets/proximo-hover.png) !important; }
+    #lb-prev:active { background-image: url(assets/voltar-pressed.png) !important; }
+    #lb-next:active { background-image: url(assets/proximo-pressed.png) !important; }
     @media (hover: hover) {
-      #lb-prev:hover { background-image: url(assets/voltar-hover.png) !important; }
-      #lb-next:hover { background-image: url(assets/proximo-hover.png) !important; }
+      #lb-prev:hover { background-image: url(assets/voltar-pressed.png) !important; }
+      #lb-next:hover { background-image: url(assets/proximo-pressed.png) !important; }
     }
     .lb-nav, .lb-nav:hover, .lb-nav:active { background-color: transparent !important; box-shadow: none !important; }
     .lb-nav:disabled { opacity: 0.18; }
@@ -1030,89 +1030,85 @@ const GALLERY_CONFIG = {
   items: [
 
     // === FACHADAS / FA-FACHADAS ===
-    { id:1, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Fachada A', src:'assets/IMAGENS/MACK32_ST_R02_01_Fachada_A.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_01_Fachada_A.jpg' },
-    { id:2, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Fachada B', src:'assets/IMAGENS/MACK32_ST_R01_02_Fachada_B.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_02_Fachada_B.jpg' },
-    { id:3, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Portaria', src:'assets/IMAGENS/MACK32_ST_R02_03_Portaria.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_03_Portaria.jpg' },
+    { id:1, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Fachada', src:'assets/IMAGENS/01_RSFMELV1_ST1_R05_Fachada.jpg', thumb:'assets/IMAGENS/01_RSFMELV1_ST1_R05_Fachada.jpg', large:'assets/IMAGENS/01_RSFMELV1_ST1_R05_Fachada.jpg' },
+    { id:2, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Fachada Extra', src:'assets/IMAGENS/SQU_ST5_55_Fachada_Extra_R01.jpg', thumb:'assets/IMAGENS/SQU_ST5_55_Fachada_Extra_R01.jpg', large:'assets/IMAGENS/SQU_ST5_55_Fachada_Extra_R01.jpg' },
+    { id:3, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Portaria', src:'assets/IMAGENS/SQU_ST_04_Portaria_R05.jpg', thumb:'assets/IMAGENS/SQU_ST_04_Portaria_R05.jpg', large:'assets/IMAGENS/SQU_ST_04_Portaria_R05.jpg' },
+    { id:4, type:'image', category:'fachadas', subCategory:'fa-fachadas', title:'Port Cochère', src:'assets/IMAGENS/12_RSFMELV1_ST1_R05_PortCochere.jpg', thumb:'assets/IMAGENS/12_RSFMELV1_ST1_R05_PortCochere.jpg', large:'assets/IMAGENS/12_RSFMELV1_ST1_R05_PortCochere.jpg' },
 
     // === FACHADAS / FA-AEREAS ===
-    { id:4, type:'image', category:'fachadas', subCategory:'fa-aereas', title:'Voo sobre o Átrio', src:'assets/IMAGENS/MACK32_ST_R01_04_Voo_Atrio.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_04_Voo_Atrio.jpg' },
-    { id:5, type:'image', category:'fachadas', subCategory:'fa-aereas', title:'Pátio – Vista Aérea', src:'assets/IMAGENS/MACK32_ST2_R01_40_Patio_Drone (1) (7).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R01_40_Patio_Drone (1) (7).jpg' },
-    { id:6, type:'image', category:'fachadas', subCategory:'fa-aereas', title:'Masterplan', src:'assets/IMAGENS/MACK32_ST_16_Masterplan (1)- SUBSTITUIR.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_16_Masterplan (1)- SUBSTITUIR.jpg' },
+    { id:5, type:'image', category:'fachadas', subCategory:'fa-aereas', title:'Voo – Vista', src:'assets/IMAGENS/SQU_ST_17_Voo_Pass_Vista_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_17_Voo_Pass_Vista_R03.jpg', large:'assets/IMAGENS/SQU_ST_17_Voo_Pass_Vista_R03.jpg' },
+    { id:6, type:'image', category:'fachadas', subCategory:'fa-aereas', title:'Voo – Rooftop', src:'assets/IMAGENS/SQU_ST_22_Voo_Pass_Rooftop_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_22_Voo_Pass_Rooftop_R03.jpg', large:'assets/IMAGENS/SQU_ST_22_Voo_Pass_Rooftop_R03.jpg' },
 
     // === LAZER / LZ-PISCINAS ===
-    { id:7, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Adulto', src:'assets/IMAGENS/MACK32_ST_R04_12_Piscina_Adulto.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R04_12_Piscina_Adulto.jpg' },
-    { id:8, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Adulto B', src:'assets/IMAGENS/MACK32_ST_48_R02_Piscina_Adulto_B .jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_48_R02_Piscina_Adulto_B .jpg' },
-    { id:9, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Rooftop', src:'assets/IMAGENS/MACK32_ST1_R03_19_Piscina_Rooftop (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R03_19_Piscina_Rooftop (1).jpg' },
-    { id:10, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Rooftop B', src:'assets/IMAGENS/MACK32_ST_R01_49_Piscina_Rooftop_B (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_49_Piscina_Rooftop_B (1).jpg' },
-    { id:11, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Rooftop C', src:'assets/IMAGENS/MACK32_ST2_R01_50_Piscina_Rooftop_C (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R01_50_Piscina_Rooftop_C (1).jpg' },
-    { id:12, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Coberta', src:'assets/IMAGENS/MACK32_ST2_R02_13_Piscina_Coberta (2).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R02_13_Piscina_Coberta (2).jpg' },
+    { id:7, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Adulto', src:'assets/IMAGENS/SQU_ST_07_Piscina_Adulto_A_R05_-Golden_hour-.jpg', thumb:'assets/IMAGENS/SQU_ST_07_Piscina_Adulto_A_R05_-Golden_hour-.jpg', large:'assets/IMAGENS/SQU_ST_07_Piscina_Adulto_A_R05_-Golden_hour-.jpg' },
+    { id:8, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Infantil', src:'assets/IMAGENS/SQU_ST_05_Piscina_Infantil_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_05_Piscina_Infantil_R04.jpg', large:'assets/IMAGENS/SQU_ST_05_Piscina_Infantil_R04.jpg' },
+    { id:9, type:'image', category:'lazer', subCategory:'lz-piscinas', title:'Piscina Spa', src:'assets/IMAGENS/SQU_ST_33_Piscina_Spa_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_33_Piscina_Spa_R03.jpg', large:'assets/IMAGENS/SQU_ST_33_Piscina_Spa_R03.jpg' },
 
     // === LAZER / LZ-ESPORTES ===
-    { id:13, type:'image', category:'lazer', subCategory:'lz-esportes', title:'Beach Tennis', src:'assets/IMAGENS/MACK32_ST_R01_09_Beach_Tennis (3).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_09_Beach_Tennis (3).jpg' },
-    { id:14, type:'image', category:'lazer', subCategory:'lz-esportes', title:'Quadra de Pickleball', src:'assets/IMAGENS/MACK32_ST_R02_10_Quadra_PickBell. (2).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_10_Quadra_PickBell. (2).jpg' },
+    { id:10, type:'image', category:'lazer', subCategory:'lz-esportes', title:'Quadra Recreativa', src:'assets/IMAGENS/SQU_ST_10_Quadra_Recreativa_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_10_Quadra_Recreativa_R04.jpg', large:'assets/IMAGENS/SQU_ST_10_Quadra_Recreativa_R04.jpg' },
+    { id:11, type:'image', category:'lazer', subCategory:'lz-esportes', title:'Quadra Beach', src:'assets/IMAGENS/SQU_ST_11_Quadra_Beach_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_11_Quadra_Beach_R04.jpg', large:'assets/IMAGENS/SQU_ST_11_Quadra_Beach_R04.jpg' },
 
     // === LAZER / LZ-CONVIVENCIA ===
-    { id:15, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Fire Place', src:'assets/IMAGENS/MACK32_ST_R01_11_Fire_Place.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_11_Fire_Place.jpg' },
-    { id:16, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Space Family', src:'assets/IMAGENS/MACK32_ST_R01_15_Space_Family (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_15_Space_Family (1).jpg' },
-    { id:17, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Playground', src:'assets/IMAGENS/MACK32_ST2_R03_07_Playground (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R03_07_Playground (1).jpg' },
-    { id:18, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Churrasqueira', src:'assets/IMAGENS/MACK32_ST2_R04_05_Churrasqueira (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R04_05_Churrasqueira (1).jpg' },
-    { id:19, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Pet Place', src:'assets/IMAGENS/MACK32_ST2_R01_14_Pet_Place.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R01_14_Pet_Place.jpg' },
+    { id:12, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Espaço Gourmet', src:'assets/IMAGENS/SQU_ST_08_Espaco_Gourmet_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_08_Espaco_Gourmet_R03.jpg', large:'assets/IMAGENS/SQU_ST_08_Espaco_Gourmet_R03.jpg' },
+    { id:13, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Fogo de Chão', src:'assets/IMAGENS/SQU_ST_09_Fogo_de_Chao_R02.jpg', thumb:'assets/IMAGENS/SQU_ST_09_Fogo_de_Chao_R02.jpg', large:'assets/IMAGENS/SQU_ST_09_Fogo_de_Chao_R02.jpg' },
+    { id:14, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Churrasqueira VIP', src:'assets/IMAGENS/SQU_ST_14_Churrasqueira_Vip_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_14_Churrasqueira_Vip_R04.jpg', large:'assets/IMAGENS/SQU_ST_14_Churrasqueira_Vip_R04.jpg' },
+    { id:15, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Playground', src:'assets/IMAGENS/SQU_ST_50_Playground_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_50_Playground_R04.jpg', large:'assets/IMAGENS/SQU_ST_50_Playground_R04.jpg' },
+    { id:16, type:'image', category:'lazer', subCategory:'lz-convivencia', title:'Brinquedoteca', src:'assets/IMAGENS/SQU_ST_40_Brinquedoteca_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_40_Brinquedoteca_R04.jpg', large:'assets/IMAGENS/SQU_ST_40_Brinquedoteca_R04.jpg' },
 
     // === AREAS-COMUNS / AC-SOCIAL ===
-    { id:20, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Lobby', src:'assets/IMAGENS/MACK32_ST1_R04_21_Lobby (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R04_21_Lobby (1).jpg' },
-    { id:21, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Hall Social', src:'assets/IMAGENS/MACK32_ST1_R02_41_Hall_Social_B (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R02_41_Hall_Social_B (1).jpg' },
-    { id:22, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Salão de Festas', src:'assets/IMAGENS/MACK32_ST1_R03_24_Salao_Festas_01 (2).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R03_24_Salao_Festas_01 (2).jpg' },
-    { id:23, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Salão de Festas B', src:'assets/IMAGENS/MACK32_ST1_R01_43_Salao_Festas_B.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R01_43_Salao_Festas_B.jpg' },
-    { id:24, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Restaurante', src:'assets/IMAGENS/MACK32_ST_R01_22_Restaurante.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_22_Restaurante.jpg' },
-    { id:25, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Sports Bar', src:'assets/IMAGENS/MACK32_ST_R03_18_Sports_Bar.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R03_18_Sports_Bar.jpg' },
-    { id:26, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Cinema', src:'assets/IMAGENS/MACK32_ST_R02_20_Cinema (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_20_Cinema (1).jpg' },
-    { id:27, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Podcast', src:'assets/IMAGENS/MACK32_ST_R02_25_Podcast (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_25_Podcast (1).jpg' },
-    { id:28, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'VIP Space', src:'assets/IMAGENS/MACK32_ST2_R03_06_Vip_Space (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R03_06_Vip_Space (1).jpg' },
+    { id:17, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Lobby Social', src:'assets/IMAGENS/SQU_ST_26_Lobby_Social_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_26_Lobby_Social_R04.jpg', large:'assets/IMAGENS/SQU_ST_26_Lobby_Social_R04.jpg' },
+    { id:18, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Salão de Festas', src:'assets/IMAGENS/SQU_ST_34_Salao_de_festas_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_34_Salao_de_festas_R04.jpg', large:'assets/IMAGENS/SQU_ST_34_Salao_de_festas_R04.jpg' },
+    { id:19, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Espaço Jogos', src:'assets/IMAGENS/SQU_ST_36_Espaco_Jogos_CL_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_36_Espaco_Jogos_CL_R03.jpg', large:'assets/IMAGENS/SQU_ST_36_Espaco_Jogos_CL_R03.jpg' },
+    { id:20, type:'image', category:'areas-comuns', subCategory:'ac-social', title:'Sports Bar', src:'assets/IMAGENS/SQU_ST_39_Sport_Bar_R02.jpg', thumb:'assets/IMAGENS/SQU_ST_39_Sport_Bar_R02.jpg', large:'assets/IMAGENS/SQU_ST_39_Sport_Bar_R02.jpg' },
 
     // === AREAS-COMUNS / AC-COWORKING ===
-    { id:29, type:'image', category:'areas-comuns', subCategory:'ac-coworking', title:'Coworking Multiuso', src:'assets/IMAGENS/MACK32_ST1_R03_29_Coworking_Multiuso.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R03_29_Coworking_Multiuso.jpg' },
-    { id:30, type:'image', category:'areas-comuns', subCategory:'ac-coworking', title:'Sala de Reunião', src:'assets/IMAGENS/MACK32_ST1_R04_28_Coworking_Sala_Reuniao.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R04_28_Coworking_Sala_Reuniao.jpg' },
+    { id:21, type:'image', category:'areas-comuns', subCategory:'ac-coworking', title:'Coworking', src:'assets/IMAGENS/SQU_ST_38_Coworking_CL_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_38_Coworking_CL_R04.jpg', large:'assets/IMAGENS/SQU_ST_38_Coworking_CL_R04.jpg' },
 
     // === AREAS-COMUNS / AC-SERVICOS ===
-    { id:31, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Mini Market', src:'assets/IMAGENS/MACK32_ST_R01_47_Mini_Market.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_47_Mini_Market.jpg' },
-    { id:32, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Delivery', src:'assets/IMAGENS/MACK32_ST1_R02_23_Delivery (2).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R02_23_Delivery (2).jpg' },
-    { id:33, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Lavanderia', src:'assets/IMAGENS/MACK32_ST1_R02_27_Lavanderia (4).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R02_27_Lavanderia (4).jpg' },
-    { id:34, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Bicicletário', src:'assets/IMAGENS/MACK32_ST1_R01_32_Bicicletario (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R01_32_Bicicletario (1).jpg' },
-    { id:35, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Car Wash', src:'assets/IMAGENS/MACK32_ST1_R01_39_Car_Wash (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R01_39_Car_Wash (1).jpg' },
+    { id:22, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Delivery', src:'assets/IMAGENS/SQU_ST_49_Delivery_R01.jpg', thumb:'assets/IMAGENS/SQU_ST_49_Delivery_R01.jpg', large:'assets/IMAGENS/SQU_ST_49_Delivery_R01.jpg' },
+    { id:23, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Car Wash', src:'assets/IMAGENS/SQU_ST_31_Car_Wash_R02.jpg', thumb:'assets/IMAGENS/SQU_ST_31_Car_Wash_R02.jpg', large:'assets/IMAGENS/SQU_ST_31_Car_Wash_R02.jpg' },
+    { id:24, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Bicicletário', src:'assets/IMAGENS/SQU_ST_32_Bike_R02.jpg', thumb:'assets/IMAGENS/SQU_ST_32_Bike_R02.jpg', large:'assets/IMAGENS/SQU_ST_32_Bike_R02.jpg' },
+    { id:25, type:'image', category:'areas-comuns', subCategory:'ac-servicos', title:'Pavimento Tipo – Depósito', src:'assets/IMAGENS/SQU_42_R03_Pav_Tipo_depósito.jpg', thumb:'assets/IMAGENS/SQU_42_R03_Pav_Tipo_depósito.jpg', large:'assets/IMAGENS/SQU_42_R03_Pav_Tipo_depósito.jpg' },
 
     // === BEM-ESTAR / BE-FITNESS ===
-    { id:36, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Academia', src:'assets/IMAGENS/MACK32_ST1_R04_30_Academia (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R04_30_Academia (1).jpg' },
-    { id:37, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Academia B', src:'assets/IMAGENS/MACK32_ST1_R01_44_Academia_B.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST1_R01_44_Academia_B.jpg' },
-    { id:38, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Yoga', src:'assets/IMAGENS/MACK32_ST_R01_17_Yoga.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R01_17_Yoga.jpg' },
+    { id:26, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Academia', src:'assets/IMAGENS/SQU_ST_27_Academia_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_27_Academia_R04.jpg', large:'assets/IMAGENS/SQU_ST_27_Academia_R04.jpg' },
+    { id:27, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Academia B', src:'assets/IMAGENS/SQU_ST_52_Academia_B_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_52_Academia_B_R04.jpg', large:'assets/IMAGENS/SQU_ST_52_Academia_B_R04.jpg' },
+    { id:28, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Pilates', src:'assets/IMAGENS/SQU_ST_28_Pilates_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_28_Pilates_R03.jpg', large:'assets/IMAGENS/SQU_ST_28_Pilates_R03.jpg' },
+    { id:29, type:'image', category:'bem-estar', subCategory:'be-fitness', title:'Rooftop Yoga', src:'assets/IMAGENS/SQU_ST_21_Rooftop_Yoga_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_21_Rooftop_Yoga_R03.jpg', large:'assets/IMAGENS/SQU_ST_21_Rooftop_Yoga_R03.jpg' },
 
     // === BEM-ESTAR / BE-SPA ===
-    { id:39, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Wellness', src:'assets/IMAGENS/MAC32_ST2_R01_52_Welness.jpg', thumb:'assets/thumbs/IMAGENS/MAC32_ST2_R01_52_Welness.jpg' },
-    { id:40, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Ofurô', src:'assets/IMAGENS/MACK32_ST2_R01_08_Ofuro (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R01_08_Ofuro (1).jpg' },
-    { id:41, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Sauna', src:'assets/IMAGENS/MACK32_ST2_R01_51_Sauna (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST2_R01_51_Sauna (1).jpg' },
+    { id:30, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Sauna', src:'assets/IMAGENS/SQU_ST_16_Sauna_R03.jpg', thumb:'assets/IMAGENS/SQU_ST_16_Sauna_R03.jpg', large:'assets/IMAGENS/SQU_ST_16_Sauna_R03.jpg' },
+    { id:31, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Ofurô', src:'assets/IMAGENS/SQU_13_Ofuro_R04.jpg', thumb:'assets/IMAGENS/SQU_13_Ofuro_R04.jpg', large:'assets/IMAGENS/SQU_13_Ofuro_R04.jpg' },
+    { id:32, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Massagem', src:'assets/IMAGENS/SQU_ST_29_Massagem_R02.jpg', thumb:'assets/IMAGENS/SQU_ST_29_Massagem_R02.jpg', large:'assets/IMAGENS/SQU_ST_29_Massagem_R02.jpg' },
+    { id:33, type:'image', category:'bem-estar', subCategory:'be-spa', title:'Espaço Beleza', src:'assets/IMAGENS/SQU_ST_30_Espaco_Beleza_R04.jpg', thumb:'assets/IMAGENS/SQU_ST_30_Espaco_Beleza_R04.jpg', large:'assets/IMAGENS/SQU_ST_30_Espaco_Beleza_R04.jpg' },
 
     // === APARTAMENTO ===
-    { id:42, type:'image', category:'apartamento', title:'Living 31,40 m² – Decorado', src:'assets/IMAGENS/MACK32_ST3_R02_35_Living_Final_07_31,40m_Decorado (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST3_R02_35_Living_Final_07_31,40m_Decorado (1).jpg' },
-    { id:43, type:'image', category:'apartamento', title:'Living 31,40 m²', src:'assets/IMAGENS/MACK32_ST3_R02_38_Living_Final_06_31_40.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST3_R02_38_Living_Final_06_31_40.jpg' },
-    { id:44, type:'image', category:'apartamento', title:'Living 32,36 m²', src:'assets/IMAGENS/MACK32_ST_R02_33_Living_Final_01_32_36m (1).jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST_R02_33_Living_Final_01_32_36m (1).jpg' },
-    { id:45, type:'image', category:'apartamento', title:'Living 33,40 m²', src:'assets/IMAGENS/MACK32_ST3_R02_37_Living_Final_04_33,40m.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST3_R02_37_Living_Final_04_33,40m.jpg' },
-    { id:46, type:'image', category:'apartamento', title:'Living 35,06 m²', src:'assets/IMAGENS/MACK32_ST3_R02_34_Living_Final_02_35,06m_00.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST3_R02_34_Living_Final_02_35,06m_00.jpg' },
-    { id:47, type:'image', category:'apartamento', title:'Living 39,50 m²', src:'assets/IMAGENS/MACK32_ST3_R02_36_Living_Final_03_39,50M.jpg', thumb:'assets/thumbs/IMAGENS/MACK32_ST3_R02_36_Living_Final_03_39,50M.jpg' },
+    { id:34, type:'image', category:'apartamento', title:'Decorado 119 m²', src:'assets/IMAGENS/SQU_14_DECORADO_119m_R03.jpg', thumb:'assets/IMAGENS/SQU_14_DECORADO_119m_R03.jpg', large:'assets/IMAGENS/SQU_14_DECORADO_119m_R03.jpg' },
+    { id:35, type:'image', category:'apartamento', title:'Decorado 92 m²', src:'assets/IMAGENS/SQU_15_DECORADO_92m_R02.jpg', thumb:'assets/IMAGENS/SQU_15_DECORADO_92m_R02.jpg', large:'assets/IMAGENS/SQU_15_DECORADO_92m_R02.jpg' },
 
     // === PLANTAS / PL-IMPLANTACAO ===
-    { id:48, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'Implantação – Lazer', src:'assets/PLANTAS/MACK32_FP_R03_08_Implantacao_Lazer_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP_R03_08_Implantacao_Lazer_POS.jpg' },
-    { id:49, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'Implantação – Rooftop', src:'assets/PLANTAS/MACK32_FP_R01_10_Rooftop_PÓS (1) (1).jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP_R01_10_Rooftop_PÓS (1) (1).jpg' },
-    { id:50, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'Planta Calunga', src:'assets/PLANTAS/MACK32_FP_COLOR_07_Planta_Calunga_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP_COLOR_07_Planta_Calunga_POS.jpg' },
+    { id:36, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'Implantação – Térreo', src:'assets/PLANTAS/IMPLANTAÇÃO TÉRREO.jpg', thumb:'assets/PLANTAS/IMPLANTAÇÃO TÉRREO.jpg', large:'assets/PLANTAS/IMPLANTAÇÃO TÉRREO.jpg' },
+    { id:37, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'Implantação – Rooftop', src:'assets/PLANTAS/IMPLANTAÇÃO ROOFTOP.jpg', thumb:'assets/PLANTAS/IMPLANTAÇÃO ROOFTOP.jpg', large:'assets/PLANTAS/IMPLANTAÇÃO ROOFTOP.jpg' },
+    { id:38, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'1º Sobressolo', src:'assets/PLANTAS/01_PLB_1º_SOBRESOLO_FINAL.jpg', thumb:'assets/PLANTAS/01_PLB_1º_SOBRESOLO_FINAL.jpg', large:'assets/PLANTAS/01_PLB_1º_SOBRESOLO_FINAL.jpg' },
+    { id:39, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'2º Sobressolo', src:'assets/PLANTAS/03_PLB_2º_SOBRESOLO_FINAL.jpg', thumb:'assets/PLANTAS/03_PLB_2º_SOBRESOLO_FINAL.jpg', large:'assets/PLANTAS/03_PLB_2º_SOBRESOLO_FINAL.jpg' },
+    { id:40, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'1º Subsolo', src:'assets/PLANTAS/04_PLB_1º_SUBSOLO_FINAL.jpg', thumb:'assets/PLANTAS/04_PLB_1º_SUBSOLO_FINAL.jpg', large:'assets/PLANTAS/04_PLB_1º_SUBSOLO_FINAL.jpg' },
+    { id:41, type:'image', category:'plantas', subCategory:'pl-implantacao', isPlant:true, title:'2º Subsolo', src:'assets/PLANTAS/02_PLB_2º_SUBSOLO_FINAL.jpg', thumb:'assets/PLANTAS/02_PLB_2º_SUBSOLO_FINAL.jpg', large:'assets/PLANTAS/02_PLB_2º_SUBSOLO_FINAL.jpg' },
 
     // === PLANTAS / PL-TIPOS ===
-    { id:51, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 31,40 m²', src:'assets/PLANTAS/MACK32_FP1_R02_06_Final_06_31,40m_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP1_R02_06_Final_06_31,40m_POS.jpg' },
-    { id:52, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 32,36 m²', src:'assets/PLANTAS/MACK32_FP1_R02_01_Final_01_32,36m_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP1_R02_01_Final_01_32,36m_POS.jpg' },
-    { id:53, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 33,40 m²', src:'assets/PLANTAS/MACK32_FP1_R01_05_Final_04_33,40m_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP1_R01_05_Final_04_33,40m_POS.jpg' },
-    { id:54, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 35,06 m²', src:'assets/PLANTAS/MACK32_FP_R01_02_Final_02_35,06m_2_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP_R01_02_Final_02_35,06m_2_POS.jpg' },
-    { id:55, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 39,50 m²', src:'assets/PLANTAS/MACK32_FP1_R01_04_Final_03_39,50m_POS.jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP1_R01_04_Final_03_39,50m_POS.jpg' },
-    { id:56, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta 1 Suíte', src:'assets/PLANTAS/JDI10_FP1_R01_02_1SO_POS.jpg', thumb:'assets/thumbs/PLANTAS/JDI10_FP1_R01_02_1SO_POS.jpg' },
+    { id:42, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta Final 01', src:'assets/PLANTAS/SQU_01_FINAL_01_R03.jpg', thumb:'assets/PLANTAS/SQU_01_FINAL_01_R03.jpg', large:'assets/PLANTAS/SQU_01_FINAL_01_R03.jpg' },
+    { id:43, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta Final 03', src:'assets/PLANTAS/SQU_02_FINAL_03_R02.jpg', thumb:'assets/PLANTAS/SQU_02_FINAL_03_R02.jpg', large:'assets/PLANTAS/SQU_02_FINAL_03_R02.jpg' },
+    { id:44, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta Final 04', src:'assets/PLANTAS/SQU_03_FINAL_04_R03.jpg', thumb:'assets/PLANTAS/SQU_03_FINAL_04_R03.jpg', large:'assets/PLANTAS/SQU_03_FINAL_04_R03.jpg' },
+    { id:45, type:'image', category:'plantas', subCategory:'pl-tipos', isPlant:true, title:'Planta Final 06', src:'assets/PLANTAS/SQU_04_FINAL_06_R02.jpg', thumb:'assets/PLANTAS/SQU_04_FINAL_06_R02.jpg', large:'assets/PLANTAS/SQU_04_FINAL_06_R02.jpg' },
+
+    // === PLANTAS / PL-AMPLIADAS ===
+    { id:46, type:'image', category:'plantas', subCategory:'pl-ampliadas', isPlant:true, title:'Final 01 – Ampliada', src:'assets/PLANTAS/SQU_05_FINAL_01_AMPLIADA_R03.jpg', thumb:'assets/PLANTAS/SQU_05_FINAL_01_AMPLIADA_R03.jpg', large:'assets/PLANTAS/SQU_05_FINAL_01_AMPLIADA_R03.jpg' },
+    { id:47, type:'image', category:'plantas', subCategory:'pl-ampliadas', isPlant:true, title:'Final 03 – Ampliada', src:'assets/PLANTAS/SQU_06_FINAL_03_AMPLIADA_R03.jpg', thumb:'assets/PLANTAS/SQU_06_FINAL_03_AMPLIADA_R03.jpg', large:'assets/PLANTAS/SQU_06_FINAL_03_AMPLIADA_R03.jpg' },
+    { id:48, type:'image', category:'plantas', subCategory:'pl-ampliadas', isPlant:true, title:'Final 04 – Ampliada', src:'assets/PLANTAS/SQU_07_FINAL_04_AMPLIADA.jpg', thumb:'assets/PLANTAS/SQU_07_FINAL_04_AMPLIADA.jpg', large:'assets/PLANTAS/SQU_07_FINAL_04_AMPLIADA.jpg' },
+    { id:49, type:'image', category:'plantas', subCategory:'pl-ampliadas', isPlant:true, title:'Final 06 – Ampliada', src:'assets/PLANTAS/SQU_08_FINAL_06_AMPLIADA_R03.jpg', thumb:'assets/PLANTAS/SQU_08_FINAL_06_AMPLIADA_R03.jpg', large:'assets/PLANTAS/SQU_08_FINAL_06_AMPLIADA_R03.jpg' },
 
     // === PLANTAS / PL-DECORADOS ===
-    { id:57, type:'image', category:'plantas', subCategory:'pl-decorados', isPlant:true, title:'Decorado 31,40 m²', src:'assets/PLANTAS/MACK32_FP_R01_03_Final_07_31,40m_Decorado_PÓS (2).jpg', thumb:'assets/thumbs/PLANTAS/MACK32_FP_R01_03_Final_07_31,40m_Decorado_PÓS (2).jpg' },
+    { id:50, type:'image', category:'plantas', subCategory:'pl-decorados', isPlant:true, title:'Decorado 119 m²', src:'assets/PLANTAS/SQU_14_DECORADO_119m_R03.jpg', thumb:'assets/PLANTAS/SQU_14_DECORADO_119m_R03.jpg', large:'assets/PLANTAS/SQU_14_DECORADO_119m_R03.jpg' },
+    { id:51, type:'image', category:'plantas', subCategory:'pl-decorados', isPlant:true, title:'Decorado 92 m²', src:'assets/PLANTAS/SQU_15_DECORADO_92m_R02.jpg', thumb:'assets/PLANTAS/SQU_15_DECORADO_92m_R02.jpg', large:'assets/PLANTAS/SQU_15_DECORADO_92m_R02.jpg' },
   ],
 };
 
