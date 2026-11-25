@@ -5,14 +5,14 @@
 <meta name="theme-color" content="#0A0A0B">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Andamento da Obra — RSF Symmetry</title>
+<title>Andamento da Obra — RSF Square</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing:border-box; }
 :root {
-  /* RSF Symmetry — black & gold */
+  /* RSF Square — black & gold */
   --gold:#D4AF37; --gold-l:#F1D98A; --gold-d:#9C7A1E; --gold-dd:#5E4810;
   --bg:#0A0A0B; --surf:#131316; --surf2:#1A1A1F; --line:rgba(212,175,55,.14); --track:#26262C;
   --ink:#F4EFE3; --muted:#9A9384; --tend:#6F5B28;
@@ -147,7 +147,7 @@ body { font-family:Inter,"Helvetica Neue",Arial,"Segoe UI",system-ui,sans-serif;
     <div class="rsf-logo"><img src="assets/logo.png" alt="RSF"></div>
     <div class="rsf-titles">
       <h1>Andamento da Obra – Situação Atual</h1>
-      <p class="rsf-sub">Symmetry Residence</p>
+      <p class="rsf-sub">Square Design Residence</p>
     </div>
     <div class="rsf-filters" id="filtros">
       <div class="rsf-pick" role="group" aria-labelledby="rsf-per-lab">
@@ -167,9 +167,9 @@ body { font-family:Inter,"Helvetica Neue",Arial,"Segoe UI",system-ui,sans-serif;
   <div class="rsf-body">
     <aside class="rsf-hero" id="resumo">
       <div class="rsf-hero-head"><p class="rsf-k1">Físico</p><p class="rsf-k2">Real + Tendência</p></div>
-      <div class="rsf-photo"><img id="rsf-img" src="assets/obras/symmetry.jpg" alt="Perspectiva do empreendimento Symmetry Residence"></div>
+      <div class="rsf-photo"><img id="rsf-img" src="assets/obras/square.jpg" alt="Perspectiva do empreendimento Square Design Residence"></div>
       <div class="rsf-hero-txt">
-        <h2 class="rsf-name">Symmetry Residence</h2>
+        <h2 class="rsf-name">Square Design Residence</h2>
         <p class="rsf-per" id="rsf-per" aria-live="polite"></p>
         <div class="rsf-big"><span id="rsf-big">—</span><sup>%</sup></div>
         <div class="rsf-htrack"><div class="rsf-hfill" id="rsf-hfill"></div></div>
@@ -207,63 +207,51 @@ body { font-family:Inter,"Helvetica Neue",Arial,"Segoe UI",system-ui,sans-serif;
 </div>
 
 <script>
-// Dados do Symmetry Residence (extraídos de PROGRESSO-OBRAS-TODOS). Atualize os blocos abaixo a cada medição.
-const OBRA = 'Symmetry Residence';
+// Dados do Square Design Residence (extraídos de PROGRESSO-OBRAS-TODOS). Atualize os blocos abaixo a cada medição.
+const OBRA = 'Square Design Residence';
 const DATA = {
   obras: [
-    {"obra":"Symmetry Residence","avanco_fisico":44.23,"eixo_max":50,"eixo_passo":10,"mes_referencia":"2026-09"}
+    {"obra":"Square Design Residence","avanco_fisico":6.8,"eixo_max":10,"eixo_passo":2,"mes_referencia":"2026-09"}
   ],
   atividades: [
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":1,"atividade":"Preparo do Terreno","realizado":96,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":2,"atividade":"Fundações","realizado":94,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":3,"atividade":"Estrutura","realizado":94,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":4,"atividade":"Alvenaria","realizado":61,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":5,"atividade":"Drywall","realizado":14,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":6,"atividade":"Instalações Hidráulicas","realizado":27,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":7,"atividade":"Instalações Elétricas","realizado":18,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":8,"atividade":"Gesso","realizado":18,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":9,"atividade":"Esquadrias de Alumínio","realizado":3,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":10,"atividade":"Contrapiso / Cerâmica","realizado":21,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":11,"atividade":"Bancadas / Louças e Metais","realizado":0,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":12,"atividade":"Pintura","realizado":0,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":13,"atividade":"Fachada","realizado":9,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-09","ordem":14,"atividade":"Elevadores","realizado":0,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":1,"atividade":"Preparo do Terreno","realizado":93,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":2,"atividade":"Fundações","realizado":94,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":3,"atividade":"Estrutura","realizado":85,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":4,"atividade":"Alvenaria","realizado":50,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":5,"atividade":"Drywall","realizado":4,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":6,"atividade":"Instalações Hidráulicas","realizado":23,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":7,"atividade":"Instalações Elétricas","realizado":14,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":8,"atividade":"Gesso","realizado":14,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":9,"atividade":"Esquadrias de Alumínio","realizado":2,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":10,"atividade":"Contrapiso / Cerâmica","realizado":18,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":11,"atividade":"Bancadas / Louças e Metais","realizado":0,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":12,"atividade":"Pintura","realizado":0,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":13,"atividade":"Fachada","realizado":6,"casas_decimais":0},
-    {"obra":"Symmetry Residence","mes":"2026-08","ordem":14,"atividade":"Elevadores","realizado":0,"casas_decimais":0}
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":1,"atividade":"Preparo do Terreno","realizado":84,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":2,"atividade":"Fundações","realizado":63,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":3,"atividade":"Estrutura","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":4,"atividade":"Alvenaria","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":5,"atividade":"Drywall","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":6,"atividade":"Instalações Hidráulicas","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":7,"atividade":"Instalações Elétricas","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":8,"atividade":"Gesso","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":9,"atividade":"Esquadrias de Alumínio","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":10,"atividade":"Contrapiso / Cerâmica","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":11,"atividade":"Bancadas / Louças e Metais","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":12,"atividade":"Pintura","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":13,"atividade":"Fachada","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-09","ordem":14,"atividade":"Elevadores","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":1,"atividade":"Preparo do Terreno","realizado":82,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":2,"atividade":"Fundações","realizado":57,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":3,"atividade":"Estrutura","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":4,"atividade":"Alvenaria","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":5,"atividade":"Drywall","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":6,"atividade":"Instalações Hidráulicas","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":7,"atividade":"Instalações Elétricas","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":8,"atividade":"Gesso","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":9,"atividade":"Esquadrias de Alumínio","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":10,"atividade":"Contrapiso / Cerâmica","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":11,"atividade":"Bancadas / Louças e Metais","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":12,"atividade":"Pintura","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":13,"atividade":"Fachada","realizado":0,"casas_decimais":0},
+    {"obra":"Square Design Residence","mes":"2026-08","ordem":14,"atividade":"Elevadores","realizado":0,"casas_decimais":0}
   ],
   evolucao: [
-    {"obra":"Symmetry Residence","mes":"2025-02","tendencia":0.78,"real":0.78},
-    {"obra":"Symmetry Residence","mes":"2025-03","tendencia":1.11,"real":1.11},
-    {"obra":"Symmetry Residence","mes":"2025-04","tendencia":1.43,"real":1.43},
-    {"obra":"Symmetry Residence","mes":"2025-05","tendencia":1.74,"real":2.09},
-    {"obra":"Symmetry Residence","mes":"2025-06","tendencia":2.09,"real":2.26},
-    {"obra":"Symmetry Residence","mes":"2025-07","tendencia":4.08,"real":5.73},
-    {"obra":"Symmetry Residence","mes":"2025-08","tendencia":5.28,"real":6.18},
-    {"obra":"Symmetry Residence","mes":"2025-09","tendencia":8.24,"real":8.53},
-    {"obra":"Symmetry Residence","mes":"2025-10","tendencia":9.33,"real":9.82},
-    {"obra":"Symmetry Residence","mes":"2025-11","tendencia":11.33,"real":11.9},
-    {"obra":"Symmetry Residence","mes":"2025-12","tendencia":12.42,"real":12.57},
-    {"obra":"Symmetry Residence","mes":"2026-01","tendencia":13.44,"real":13.89},
-    {"obra":"Symmetry Residence","mes":"2026-02","tendencia":15.65,"real":15.96},
-    {"obra":"Symmetry Residence","mes":"2026-03","tendencia":18.88,"real":18.22},
-    {"obra":"Symmetry Residence","mes":"2026-04","tendencia":22.41,"real":23.25},
-    {"obra":"Symmetry Residence","mes":"2026-05","tendencia":26.04,"real":27.11},
-    {"obra":"Symmetry Residence","mes":"2026-06","tendencia":30.49,"real":30.83},
-    {"obra":"Symmetry Residence","mes":"2026-07","tendencia":34.12,"real":35.43},
-    {"obra":"Symmetry Residence","mes":"2026-08","tendencia":38.84,"real":39.83},
-    {"obra":"Symmetry Residence","mes":"2026-09","tendencia":44.41,"real":44.23}
+    {"obra":"Square Design Residence","mes":"2026-02","tendencia":0,"real":0},
+    {"obra":"Square Design Residence","mes":"2026-03","tendencia":0.91,"real":0.91},
+    {"obra":"Square Design Residence","mes":"2026-04","tendencia":1.71,"real":1.71},
+    {"obra":"Square Design Residence","mes":"2026-05","tendencia":2.69,"real":2.98},
+    {"obra":"Square Design Residence","mes":"2026-06","tendencia":3.99,"real":4.4},
+    {"obra":"Square Design Residence","mes":"2026-07","tendencia":6.09,"real":5.7},
+    {"obra":"Square Design Residence","mes":"2026-08","tendencia":7.26,"real":6.26},
+    {"obra":"Square Design Residence","mes":"2026-09","tendencia":8.35,"real":6.8}
   ]
 };
 const GERADO_EM = '09/10/2026';
