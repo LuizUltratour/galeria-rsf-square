@@ -1,5 +1,5 @@
 <#
-  deploy.ps1 — Deploy da galeria RSF Symmetry para o AWS S3.
+  deploy.ps1 — Deploy da galeria RSF Square para o AWS S3.
 
   Uso:
     ./deploy.ps1            # sync completo + cache-control no HTML/JS

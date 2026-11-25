@@ -1,8 +1,8 @@
-# Modern Galeria — RSF Symmetry
+# Modern Galeria — RSF Square
 
 Galeria de imagens/plantas/vídeos para injeção via script no 3DVista, hospedada no AWS S3.
 
-**Projeto:** RSF Symmetry
+**Projeto:** RSF Square
 **Tema:** verde imersivo (`#325825` / `#EAFFF7`)
 
 ---
@@ -29,7 +29,7 @@ galeria-rsf-square/
 ├── video-gallery.html      ← galeria de vídeos
 ├── galeria-360.html        ← galeria de panoramas 360° (setas pulsantes + editor)
 ├── diferenciais.html       ← ficha de diferenciais (scroll)
-├── obras.html              ← andamento da obra (só Symmetry; dados embutidos)
+├── obras.html              ← andamento da obra (só Square; dados embutidos)
 ├── obras/                  ← fonte original com TODOS os projetos (não vai para git nem S3)
 ├── inject.js               ← loader leve para injeção no 3DVista
 ├── deploy.ps1              ← deploy para o S3 (Windows; sync)
@@ -190,7 +190,7 @@ Galeria360(1);
 // Fecha a galeria 360°
 Galeria360(0);
 
-// Abre o andamento da obra (obras.html — só Symmetry Residence)
+// Abre o andamento da obra (obras.html — só Square)
 AbrirObras(1);
 
 // Fecha o andamento da obra
@@ -228,11 +228,11 @@ Para abrir direto num local: `galeria-360.html?scene=s05`.
 
 ## Andamento da Obra (`obras.html`)
 
-Painel de progresso físico **exclusivo do Symmetry Residence** (não há seletor de obra; os dados dos demais projetos não são incluídos no arquivo). Mostra avanço acumulado, avanço no mês, desvio real × tendência, % por atividade (14 etapas) e gráfico dos últimos 9 meses. Único filtro: **período de referência** (mês/ano + setas). Tema **black & gold** (`#0A0A0B` + dourado `#D4AF37`), página única sem dependências (gráfico em SVG próprio).
+Painel de progresso físico **exclusivo do Square** (não há seletor de obra; os dados dos demais projetos não são incluídos no arquivo). Mostra avanço acumulado, avanço no mês, desvio real × tendência, % por atividade (14 etapas) e gráfico dos últimos 9 meses. Único filtro: **período de referência** (mês/ano + setas). Tema **black & gold** (`#0A0A0B` + dourado `#D4AF37`), página única sem dependências (gráfico em SVG próprio).
 
 - **Fonte:** `obras/PROGRESSO-OBRAS-TODOS.html` (planilha de todos os projetos — ignorada pelo git e excluída do S3).
 - **Dados:** constante `DATA` no início do `<script>` de `obras.html` (`obras`, `atividades`, `evolucao`). A cada medição, acrescente as linhas do novo mês (`evolucao`: `mes`, `tendencia`, `real`; `atividades`: 14 linhas com `mes`, `ordem`, `atividade`, `realizado`, `casas_decimais`), atualize `avanco_fisico` e `mes_referencia` em `obras` e a data `GERADO_EM`. O eixo Y usa `eixo_max`/`eixo_passo`.
-- **Foto:** `assets/obras/symmetry.jpg`.
+- **Foto:** `assets/obras/square.jpg`.
 - **3DVista:** `AbrirObras(1)` abre / `AbrirObras(0)` fecha (ver *Integração 3DVista*). O botão de fechar envia `closeGallery` ao 3DVista, como as demais telas.
 - **Deploy:** `./deploy.ps1` (ou `aws s3 cp obras.html ... --cache-control no-cache`).
 

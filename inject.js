@@ -152,7 +152,7 @@
     w.addEventListener('message', msgHandler);
   };
 
-  // AbrirObras(1) → abre o andamento da obra (obras.html — somente Symmetry Residence)
+  // AbrirObras(1) → abre o andamento da obra (obras.html — somente Square)
   // AbrirObras(0) → fecha
   w.AbrirObras = function (show) {
     if (show !== 1) { _close(); return; }
