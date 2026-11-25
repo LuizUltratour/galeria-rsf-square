@@ -15,7 +15,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$Bucket = 's3://skylineip/Tour Virtual/rsf/galeria-duo'
+$Bucket = 's3://skylineip/Tour Virtual/rsf/galeria-square'
 $NoCache = 'no-cache,no-store,must-revalidate'
 
 # Garante que o script roda a partir da pasta do projeto
@@ -57,4 +57,4 @@ else {
 }
 
 Write-Host 'Deploy concluido.' -ForegroundColor Green
-Write-Host "Base: https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/" -ForegroundColor DarkGray
+Write-Host "Base: https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/" -ForegroundColor DarkGray

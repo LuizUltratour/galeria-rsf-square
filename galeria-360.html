@@ -11,7 +11,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #001D57;
+      --bg: #151718;
       --dark: #F2EBDD;
       --gold: #B1904E;
       --border: rgba(242,235,221,0.28);
@@ -46,14 +46,14 @@
     #strip-wrap.collapsed { transform: translateX(calc(-100% - var(--left))); }
     #strip-toggle {
       position: absolute; top: 0; left: 100%; width: 30px; height: 60px; padding: 0; cursor: pointer; pointer-events: auto;
-      background: #001D57; border: 1px solid rgba(255,255,255,0.45); border-left: none; box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      background: #151718; border: 1px solid rgba(255,255,255,0.45); border-left: none; box-shadow: 0 6px 20px rgba(0,0,0,0.4);
       display: flex; align-items: center; justify-content: center;
     }
     #strip-toggle svg { width: 18px; height: 18px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.35s ease; }
     #strip-wrap.collapsed #strip-toggle svg { transform: rotate(180deg); }
     @media (hover: hover) { #strip-toggle:hover { background: #0a8a3f; } }
     #strip {
-      pointer-events: auto; width: 100%; max-height: 100%; background: #001D57; border: 1px solid rgba(255,255,255,0.25); box-shadow: 0 6px 20px rgba(0,0,0,0.4); display: flex; flex-direction: column; gap: 8px; overflow-y: auto; overflow-x: hidden;
+      pointer-events: auto; width: 100%; max-height: 100%; background: #151718; border: 1px solid rgba(255,255,255,0.25); box-shadow: 0 6px 20px rgba(0,0,0,0.4); display: flex; flex-direction: column; gap: 8px; overflow-y: auto; overflow-x: hidden;
       padding: 10px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.5) transparent;
       -webkit-overflow-scrolling: touch; overscroll-behavior: contain; touch-action: pan-y;
     }
@@ -61,7 +61,7 @@
     /* ── Barra de rolagem: fina, em pílula, cor do projeto ── */
     #strip { scrollbar-width: thin; scrollbar-color: rgba(255,248,241,0.75) transparent; }
     #strip::-webkit-scrollbar { width: 12px; height: 12px; }
-    #strip::-webkit-scrollbar-track { background: rgba(110,55,32,0.25); margin: 6px 0; }
+    #strip::-webkit-scrollbar-track { background: rgba(21,23,24,0.25); margin: 6px 0; }
     #strip::-webkit-scrollbar-thumb { background: rgba(255,248,241,0.75); background-clip: padding-box; border: 4px solid transparent; border-radius: 999px; min-height: 48px; transition: background 0.2s; }
     #strip::-webkit-scrollbar-thumb:hover { background: #FFF8F1; background-clip: padding-box; border-width: 3px; }
     #strip::-webkit-scrollbar-corner { background: transparent; }
@@ -81,7 +81,7 @@
     }
     .hs-arrow .arr {
       position: absolute; inset: 8px; border-radius: 50%;
-      background: rgba(0,29,87,0.88); border: 2px solid #fff;
+      background: rgba(21,23,24,0.88); border: 2px solid #fff;
       display: flex; align-items: center; justify-content: center;
       box-shadow: 0 4px 14px rgba(0,0,0,0.45);
       animation: arrBeat 1.6s ease-in-out infinite;

@@ -1,11 +1,11 @@
 (function (w, d) {
   'use strict';
 
-  var GALLERY_URL        = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/index.html';
-  var VIDEO_GALLERY_URL  = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/video-gallery.html';
-  var GALERIA_360_URL    = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/galeria-360.html';
-  var DIFERENCIAIS_URL   = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/diferenciais.html';
-  var OBRAS_URL          = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-duo/obras.html';
+  var GALLERY_URL        = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/index.html';
+  var VIDEO_GALLERY_URL  = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/video-gallery.html';
+  var GALERIA_360_URL    = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/galeria-360.html';
+  var DIFERENCIAIS_URL   = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/diferenciais.html';
+  var OBRAS_URL          = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/rsf/galeria-square/obras.html';
 
   var overlay    = null;
   var msgHandler = null;
@@ -32,7 +32,7 @@
 
     var iframe = d.createElement('iframe');
     iframe.src  = GALLERY_URL + '?mode=' + encodeURIComponent(mode || 'imagens');
-    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#001D57;';
+    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#151718;';
     iframe.setAttribute('allow', 'fullscreen');
 
     overlay.appendChild(iframe);
@@ -113,7 +113,7 @@
 
     var iframe = d.createElement('iframe');
     iframe.src = GALERIA_360_URL + '?v=' + Date.now();
-    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#001D57;';
+    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#151718;';
     iframe.setAttribute('allow', 'fullscreen; gyroscope; accelerometer');
 
     overlay.appendChild(iframe);
@@ -140,7 +140,7 @@
 
     var iframe = d.createElement('iframe');
     iframe.src = DIFERENCIAIS_URL + '?v=' + Date.now();
-    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#001D57;';
+    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;background:#151718;';
     iframe.setAttribute('allow', 'fullscreen');
 
     overlay.appendChild(iframe);
